@@ -701,6 +701,17 @@ li{
     font-size: 22px;
 }
 
+@media(max-width:500px){
+    .benefit1,.benefit2{
+        /* text-align: center; */
+        justify-content: center;
+    }
+
+    .head-benefit{
+        font-size: 30px;
+    }
+}
+
 
 
 
