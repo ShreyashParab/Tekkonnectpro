@@ -543,6 +543,31 @@ li{
     text-align: justify;
 }
 
+@keyframes cloudAni{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+.cloud-animation1{
+    animation: cloudAni 0.5s ease-in;
+    animation-delay: 0s;
+}
+
+.cloud-animation2{
+    animation: cloudAni 0.5s ease-in;
+    animation-delay: 0.5s;
+}
+
+.cloud-animation3{
+    animation: cloudAni 0.5s ease-in;
+    animation-delay: 1s;
+}
+
 .cloud-icon{
     width: 60px;
     height: 60px;
@@ -626,6 +651,113 @@ li{
         height: 410px;
     }
 }
+
+/* why cloud? */
+
+.why-cloud{
+    display: flex;
+    width: 80%;
+    margin: 4rem auto;
+    gap: 10%;
+    /* justify-content: space-between; */
+}
+
+.why-cloud-image{
+    width: 40%
+}
+
+.why-cloud-image img{
+    width: 100%;
+    height: 80%;
+}
+
+.why-cloud-main{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 60%;
+}
+
+.why-cloud-heading{
+    font-size: 50px;
+    font-weight: 500;
+    text-align: center;
+    height: 150px;
+    line-height: 60px;
+    border-bottom: 1px solid black;
+}
+
+.why-cloud-content{
+    font-size: 20px;
+    text-align: justify;
+}
+
+.why-cloud-btn{
+    align-self: center;
+    background-color: black;
+    color: white ;
+    cursor: pointer;
+    width: 180px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+@media (max-width:1025px){
+    .why-cloud-main{
+        gap: 1.2rem;
+    }
+
+    .why-cloud-heading{
+        font-size: 40px;
+        line-height: 55px;
+        height: 120px;
+    }
+
+    .why-cloud-content{
+        font-size: 18px;
+    }
+}
+
+@media (max-width:900px){
+    .why-cloud{
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .why-cloud-image{
+        width: 60%;
+        align-self: center;
+    }
+
+    .why-cloud-main{
+        width: 100%;
+    }
+
+    .why-cloud-heading{
+        font-size: 30px;
+        height: 80px;
+    }
+
+    .why-cloud-content{
+        font-size: 16px;
+    }
+}
+
+@media (max-width:625px){
+    .why-cloud-image{
+        width: 100%;
+    }
+
+    .why-cloud-heading{
+        font-size: 30px;
+        line-height: 45px;
+        height: auto;
+    }
+}
+/* benefits */
 
 .benefits{
     background: url('assets/demo.jpg');
@@ -740,7 +872,234 @@ li{
     }
 }
 
+/* Reach us */
 
+.reachUs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 280px;
+    flex-direction: column;
+    gap: 2rem;
+}
 
+.reachUs-heading{
+    font-size: 50px;
+    font-weight: 500;
+}
 
+.reachUs-main{
+    display: flex;
+    gap: 10px;
+}
 
+.inputDiv{
+    width: 600px;
+    padding: 1rem;
+    border: 1px solid black;
+    font-size: 25px;
+    border-radius: 5px;
+}
+
+.inputBtn{
+    padding: 1rem;
+    border: 1px solid black;
+    background-color: #1f2632;
+    color: white;
+    font-size: 25px;
+    border-radius: 5px;
+    width: 150px;
+    text-align: center;
+    cursor: pointer;
+}
+
+@media (max-width:1025px){
+    .reachUs-heading{
+        font-size: 40px;
+    }
+
+    .inputDiv{
+        width: 500px;
+        font-size: 22px;
+    }
+
+    .inputBtn{
+        font-size: 22px;
+        width: 140px;
+    }
+}
+
+@media (max-width:768px){
+    .reachUs-heading{
+        font-size: 30px;
+    }
+
+    .inputDiv{
+        width: 450px;
+        font-size: 20px;
+    }
+
+    .inputBtn{
+        font-size: 20px;
+        width: 140px;
+    }
+}
+
+@media (max-width:500px){
+    .reachUs{
+        gap: 1rem;
+    }
+
+    .reachUs-heading{
+        font-size: 25px;
+    }
+
+    .reachUs-main{
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .inputDiv{
+        font-size: 16px;
+        width: 100%;
+        padding: 0.8rem;
+    }
+
+    .inputBtn{
+        font-size: 16px;
+        width: 120px;
+        padding: 0.8rem;
+        /* text-align: center; */
+        align-self: center;
+
+    }
+}
+
+/* Footer */
+.footer{
+    background-color: #1f2632;
+    padding: 4rem 0;
+    color: white;
+}
+
+.footer-main{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-evenly;
+}
+
+.cloud-offering, .social-media, .contact, .locateUs{
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 1.5rem;
+    /* justify-cont: center; */
+}
+
+.cloud-offering-heading, .social-media-heading, .contact-heading , .locate-heading{
+    font-size: 25px;
+}
+
+.cloud-offering-sub ,.social-media-sub{
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.contact-sub{
+    font-size: 16px;
+    text-align: justify;
+}
+
+.fb, .li, .tt{
+    display: flex;
+    gap: 1rem;
+}
+
+.social-media-icon{
+    font-size: 14px;
+}
+
+.address, .phone , .email{
+    display: flex;
+    gap: 1rem;
+}
+
+.mapArea{
+    width: 100%;
+}
+
+.copyright{
+    background-color:rgb(32, 31, 31);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    font-size: 13px;
+    padding: 1rem 0;
+}
+
+.floating-chat{
+    width: 60px;
+    height: 60px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    position: fixed;
+    bottom: 8%;
+    right: 2%;
+    background-color: white;
+}
+
+@media(max-width:1024px){
+    .footer-main{
+        width: 100%;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .cloud-offering-heading, .social-media-heading, .contact-heading , .locate-heading{
+        font-size: 22px;
+    }
+
+    .contact-sub{
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    .cloud-offering, .social-media, .contact{
+        width: 200px;
+    }
+
+    .locateUs{
+        width: 250px;
+    }
+
+    .mapArea{
+        width: 100%;
+    }
+}
+
+@media(max-width:768px){
+    .footer-main{
+        flex-wrap: wrap;
+    }
+}
+
+@media(max-width:500px){
+    .footer-main{
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .social-media-sub, .contact-sub
+    {
+        align-self: center;
+    }
+}
